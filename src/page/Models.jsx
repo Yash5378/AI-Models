@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 import {
   Card,
@@ -41,9 +52,36 @@ function Models() {
                         </CardHeader>
                         {/* <CardContent></CardContent> */}
                         <CardFooter className="flex justify-end">
-                          <Button className="h-10 w-20  bottom-0 left-0 ">
-                            read more
-                          </Button>
+                          <Dialog>
+                            <DialogTrigger asChild>
+                              <Button className="h-10 w-20  bottom-0 left-0 ">
+                                read more
+                              </Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-[425px]">
+                              <DialogHeader>
+                                <DialogTitle> About Model</DialogTitle>
+                                <DialogDescription>
+                                  Lorem ipsum dolor, sit amet consectetur
+                                  adipisicing elit. Dicta deleniti fugit, quo
+                                  eveniet placeat amet repellat error voluptatum
+                                  exercitationem. Earum incidunt aperiam nemo
+                                  reprehenderit quos autem ducimus quis, culpa
+                                  saepe? Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Facere laudantium soluta
+                                  iste dolorem quas natus quisquam, enim
+                                  possimus sequi dicta aut perspiciatis adipisci
+                                  ullam tempore amet suscipit voluptate ipsum
+                                  tempora. Lorem ipsum dolor sit amet
+                                  consectetur adipisicing elit. Consequatur
+                                  suscipit veniam quis? Nam repudiandae
+                                  praesentium nisi ipsam hic ratione dolorem
+                                  earum. Necessitatibus quo earum quis aliquid.
+                                  Vitae deserunt laboriosam distinctio.
+                                </DialogDescription>
+                              </DialogHeader>
+                            </DialogContent>
+                          </Dialog>
                           <Button
                             variant="outline"
                             size="icon"
@@ -75,9 +113,35 @@ function Models() {
                       </CardHeader>
                       {/* <CardContent></CardContent> */}
                       <CardFooter className="flex justify-end">
-                        <Button className="h-10 w-20  bottom-0 left-0 ">
-                          read more
-                        </Button>
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <Button className="h-10 w-20  bottom-0 left-0 ">
+                              read more
+                            </Button>
+                          </DialogTrigger>
+                          <DialogContent className="sm:max-w-[425px]">
+                            <DialogHeader>
+                              <DialogTitle> About Model</DialogTitle>
+                              <DialogDescription>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Dicta deleniti fugit, quo
+                                eveniet placeat amet repellat error voluptatum
+                                exercitationem. Earum incidunt aperiam nemo
+                                reprehenderit quos autem ducimus quis, culpa
+                                saepe? Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere laudantium soluta iste
+                                dolorem quas natus quisquam, enim possimus sequi
+                                dicta aut perspiciatis adipisci ullam tempore
+                                amet suscipit voluptate ipsum tempora. Lorem
+                                ipsum dolor sit amet consectetur adipisicing
+                                elit. Consequatur suscipit veniam quis? Nam
+                                repudiandae praesentium nisi ipsam hic ratione
+                                dolorem earum. Necessitatibus quo earum quis
+                                aliquid. Vitae deserunt laboriosam distinctio.
+                              </DialogDescription>
+                            </DialogHeader>
+                          </DialogContent>
+                        </Dialog>
                         <Button
                           variant="outline"
                           size="icon"
