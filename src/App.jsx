@@ -1,19 +1,20 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import { Button } from "@/components/ui/button";
 import Models from "./page/Models";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Models />
-      {/* <h1>AI Model</h1>
-      <Button>hello shadcn</Button> */}
-    </>
+    <div className="relative flex min-h-screen flex-col bg-background">
+      <div className="w-full h-full theme-zinc">
+        <div className="flex min-h-screen w-full flex-col bg-muted/40">
+          <NavigationBar />
+          <Models />
+        </div>
+      </div>
+    </div>
   );
 }
 
